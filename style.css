@@ -119,8 +119,14 @@
   text-align: center;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 600px) {
   .pipe {
     animation: pipe_animation 800ms infinite linear;
+  }
+}
+
+@media (max-width: 850px) {
+  .pipe {
+    animation: pipe_animation 1.2s infinite linear;
   }
 }
