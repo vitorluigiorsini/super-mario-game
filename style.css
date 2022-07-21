@@ -121,11 +121,11 @@
 
 @media (max-width: 600px) {
   .pipe {
-    animation: pipe_animation 600ms infinite linear;
+    animation: pipe_animation 800ms infinite linear;
   }
 }
 
-@media (max-width: 850px) {
+@media (min-width: 601px) and (max-width: 900px) {
   .pipe {
     animation: pipe_animation 1.2s infinite linear;
   }
