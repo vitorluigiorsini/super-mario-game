@@ -102,19 +102,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px;
+  gap: 5px;
 }
 
 .reload {
-  background-color: steelblue;
+  background-color: rgb(57, 116, 18);
   border: none;
   border-radius: 5px;
   padding: 6px;
-  margin-top: 10px;
   color: gainsboro;
   font-weight: 600;
 }
 
-@media (max-width: 426px) {
+.info {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
   .pipe {
     animation: pipe_animation 800ms infinite linear;
   }
