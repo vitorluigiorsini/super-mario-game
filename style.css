@@ -97,3 +97,25 @@
     left: -350px
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reload {
+  background-color: steelblue;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  margin-top: 10px;
+  color: gainsboro;
+  font-weight: 600;
+}
+
+@media (max-width: 426px) {
+  .pipe {
+    animation: pipe_animation 800ms infinite linear;
+  }
+}
