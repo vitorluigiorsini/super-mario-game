@@ -1,7 +1,7 @@
 const mario = document.querySelector(".mario-running");
 const pipe = document.querySelector(".pipe");
 
-window.addEventListener("keydown", () => {
+window.addEventListener("click", () => {
   mario.classList.add("jump");
   setTimeout(() => {
     mario.classList.remove("jump");
