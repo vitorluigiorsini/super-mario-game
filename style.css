@@ -121,7 +121,7 @@
 
 @media (max-width: 600px) {
   .pipe {
-    animation: pipe_animation 700ms infinite linear;
+    animation: pipe_animation 600ms infinite linear;
   }
 }
 
