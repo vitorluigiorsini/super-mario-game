@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  border-bottom: 30px solid saddlebrown;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgb(125, 186, 255), rgb(205, 233, 245));
+}
+
+.mario-running {
+  width: 120px;
+  position: absolute;
+  bottom: 0;
+}
+
+.jump {
+  animation: mario_animation 500ms linear;
+}
+
+.pipe {
+  width: 80px;
+  position: absolute;
+  bottom: 0;
+  animation: pipe_animation 2s infinite linear;
+}
+
+.clouds1 {
+  margin-top: 20px;
+  width: 500px;
+  position: absolute;
+  animation: clouds1_animation 30s infinite linear;
+}
+
+.clouds2 {
+  margin-top: 60px;
+  width: 350px;
+  position: absolute;
+  animation: clouds2_animation 18s infinite linear;
+}
+
+@keyframes mario_animation {
+  0% {
+    bottom: 0;
+  }
+
+  40% {
+    bottom: 180px;
+  }
+
+  60% {
+    bottom: 180px;
+  }
+
+  70% {
+    bottom: 150px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes pipe_animation {
+  from {
+    left: 100%
+  }
+
+  to {
+    left: -80px
+  }
+}
+
+@keyframes clouds1_animation {
+  from {
+    left: 100%
+  }
+
+  to {
+    left: -500px
+  }
+}
+
+@keyframes clouds2_animation {
+  from {
+    left: 100%
+  }
+
+  to {
+    left: -350px
+  }
+}
