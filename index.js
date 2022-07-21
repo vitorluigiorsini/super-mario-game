@@ -1,11 +1,30 @@
+// Capturar código da tecla pressionada
+// ***********************************************
+// document.addEventListener("keydown", () => {
+//   const keyCode = event.keyCode;
+//   console.log(keyCode);
+// });
+// ***********************************************
+
 const mario = document.querySelector(".mario-running");
 const pipe = document.querySelector(".pipe");
 
-window.addEventListener("click", () => {
+document.addEventListener("click", () => {
   mario.classList.add("jump");
   setTimeout(() => {
     mario.classList.remove("jump");
   }, 500);
+});
+
+document.addEventListener("keydown", () => {
+  if (event.keyCode === 38) {
+    mario.classList.add("jump");
+    setTimeout(() => {
+      mario.classList.remove("jump");
+    }, 500);
+  } else if (event.keyCode === 27) {
+    location.reload();
+  }
 });
 
 const loop = setInterval(() => {
